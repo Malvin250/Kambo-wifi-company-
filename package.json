@@ -1,0 +1,23 @@
+{
+  "name": "kambo-wifi",
+  "version": "1.0.0",
+  "description": "Kambo WiFi - Complete WiFi Management Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "wifi",
+    "management",
+    "vouchers",
+    "payments"
+  ],
+  "author": "Kambo WiFi Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
